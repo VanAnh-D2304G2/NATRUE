@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Erica+One&family=Inter:wght@500&display=swap');
+body
+{
+	background-color:#ffffff;
+	color: #C66D48;
+	font-family: 'Erica One', 'Be Vietnam Pro', 'Inter', sans-serif;
+	font-size: 16px;
+	margin: 0
+}
+h1,h2{font-family: 'Erica One', "sans-serif";}
+strong{font-family: 'Be Vietnam Pro', sans-serif;}
+.color-primary{color: #D35A2F}
+
+.fontscript
+{font-family: 'Inter', sans-serif;
+font-size: 18px}
+.container
+{width: 80%; margin: auto}
+*{box-sizing: border-box}
+.row{display: flex; flex-wrap: wrap}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"]
+{
+	padding: 20px; overflow: hidden;
+	border: 1px
+}
+.img-100{width: 100%; height: auto}
+.justify-between{justify-content: space-between}
+.justify-center{justify-content: center}
+.justify-end{justify-content: flex-end}
+.justify-around{justify-content: space-around}
+.align-stretch{align-content: stretch}
+.text-orange{color: #C66D48}
+.text-center{text-align: center}
+.text-right{text-align: right}
+header .logo{height: 35px}
+header .container{display: flex; justify-content: space-between; align-items: center}
+section{padding: 0px}
+.menu ul{
+	display: flex;
+	list-style: none;
+	padding: 0
+}
+.menu ul li{position: relative}
+.menu ul li a
+{
+	padding: 5px 40px; 
+	text-decoration: none; 
+	color: #C66D48; 
+	text-transform: uppercase;
+	display: block; 
+	transition: all 0.3s}
+.menu ul li a:hover{color: black; text-decoration-line: underline}
+.menu ul ul
+{
+	display: block;/*thẳng hàng*/
+	background: white;
+	position: absolute;/*giữ nguyên hàng cho menu*/
+	width: 270px;/*độ rộng box con*/
+	left: 0; top: 200%;
+	opacity: 0;
+	visibility: hidden; /*ẩn menu sổ*/
+	
+	transition: all 0.5s
+}
+.menu ul li:hover> ul{top: 148%; opacity: 1; visibility: visible; border: thin solid #C66D48}
+header .icon
+{
+	display: flex;
+	justify-content:flex-end
+}
+.banner {border-bottom:medium  solid #C66D48; border-top: medium solid #C66D48}
+a.tieude-vung 
+{
+	color: #C66D48; 
+	transition: all 0.3s; 
+	font-size: 100px; 
+	text-decoration: none; 
+	display: flex; 
+	align-items:center; 
+	justify-content: center; 
+	margin: none
+}
+a.tieude-vung:hover{ color: black}
+#outdrinks .chai {position: relative; right: 150px; bottom: 110px}
+#outdrinks .bubble {position: relative; min-width: 500px; top: -50px; left: 30px}
+#outdrinks p{color: black; font-size: 16px; line-height: 20px; text-align: justify; padding-left: 100px}
+#try .sp{ overflow: hidden }
+#try .sp img{transition: all 0.5s; padding: 50px 0}
+#try .sp:hover> img{transform: scale(1.1)}
+#try a.btn-primary
+{
+	position: relative; left: 330px;
+	background-color: #D35A2F;
+	padding: 20px 40px;
+	border: none; width: 500px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	display:flex; 
+	align-items:center; 
+	justify-content: center;
+	color: black;
+}
+#try a.btn-primary:hover{color: #D35A2F; background-color: black}
+#thanh-phan{padding: 100px 0 0 0;border: 0px solid rgba(0,0,0,0.00);}
+#thanh-phan .row {
+  display: flex;
+  padding: 0; margin: 0
+}
+#thanh-phan .col-4 {
+	position: relative;
+  padding: 0;
+	overflow: hidden;
+}
+
+#thanh-phan .col-4 img {
+	position: relative;
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%; overflow: hidden;
+	transition: all 0.3s
+}
+#thanh-phan .col-4:hover> img{transform: scale(1.1)}
+#thanh-phan .text{display: flex; position: absolute; bottom: 0%; left: 70%}
+#purpose{position: relative}
+#purpose img{
+	 display: block;
+  width: 100%;
+  height: auto}
+#purpose .overlay {color: black; position: absolute;
+	 bottom: 8%;padding: 0 150px
+}
+#purpose h1
+{
+	font-size: 55px; text-align: center; padding: 200px 0 80px
+}
+#purpose p
+{
+	font-size: 25px; text-align: center; margin: 11%
+}
+#poster {background-color: #C66D48; margin: 0; border: 2px solid rgba(0,0,0,0.00);}
+#poster h1
+{
+	font-size: 64px; color: white;
+	padding: 150px 0 50px; display: flex;
+	align-items:center;
+	justify-content: center
+	
+}
+#poster .pt {overflow: hidden}
+#poster .pt img{padding: 0 0 150px; transition: all 0.3s}
+#poster .pt:hover> img{transform: scale(1.1)}
+#new h1
+{
+	font-size: 96px; text-align: center; display: flex;
+	justify-content: center
+}
+#new img {
+	padding: 0 0 120px
+}
+footer {
+	background-color: #C66D48
+}
+footer .container .row{align-items: center; display: flex; justify-content: center}
+footer a img {justify-content: center; height: 80px}
+footer h1{
+	color: white; font-size: 25px; padding: 0; margin: 0
+}
+footer .link h2{margin: 0}
+footer .link h2 a{
+	color: black; font-size: 16px; text-decoration: none; display: block; margin: 0px; padding: 0
+}
+.vi-tri {
+	text-align:right
+}
+footer .col-4 {position: relativex}
+footer .icon {margin: 10px 0}
+footer .container .row .col-4 .vi-tri .icon a{
+  font-size: 20px; letter-spacing: 10px; transition: all 0.3s; color: black; text-decoration: none}
+footer .link h2 a:hover{color: white}
+footer .container .row .col-4 .vi-tri .icon a:hover {color: white}
+/*about us*/
+#intro {
+  position: relative; overflow: hidden
+ }
+#intro img{
+	 display: block;
+  width: 100%;
+  height: auto
+}
+#intro .overlay {
+  position: absolute; color: white;
+  bottom: 0;
+  left: -2000px;
+  right: 0;
+  background-color:rgba(198,109,72,0.5);
+ 
+  width: 75%;
+  height: 100%;
+  transition: all 0.5s;
+	display: flex;
+	align-items: center; justify-content: space-around}
+#intro .overlay h1{color:black; font-size: 70px; width: 85%}
+#intro .overlay p{padding: 50px 0px; text-align: justify; width: 74%; line-height: 25px; letter-spacing: 0.5px}
+#intro .overlay .text{width: 80%}
+#intro:hover> .overlay{left: 0}
+#believe {position: relative}
+#believe h1{color: white; display: flex; position: absolute; bottom: 30%; left: 8%; right: 8%; text-align: center; font-size: 35px}
+#envi {
+  position: relative; overflow: hidden;
+ 
+}
+#envi img{
+	 display: block;
+  width: 100%;
+  height: auto
+}
+#envi .overlay {
+  position: absolute; color: white;
+  bottom: 0;
+  left: 20000px;
+  right: 0px;
+  background-color:rgba(198,109,72,0.5);
+width: 75%;
+  height: 100%;
+  transition: all 0.5s;
+	display: flex;
+	align-items: center; justify-content: flex-end}
+#envi .overlay h1{color:black; font-size: 70px; width: 90%}
+#envi .overlay p{padding: 50px 50px 50px 100px; text-align: justify; width: 87%; line-height: 25px; letter-spacing: 0.5px}
+#envi .overlay .text{width: 80%}
+#envi:hover> .overlay{left: 25%}
+#life{padding: 90px}
+#life h2{font-size: 35px; letter-spacing: 1px;
+color: #C66D48; 
+	transition: all 0.3s;
+}
+#life h2:hover{ color: black}
+#life .col-4 {overflow: hidden}
+#life img{transition: all 0.5s}
+#life .col-4:hover> img{transform: scale(1.1)}
+/*faqs*/
+#faqs {padding: 30px 0 50px }
+#faqs .row .col-6 {display: flex; position: relative; padding: 5px 30px}
+#faqs h3{font-size: 24px; margin: 0; padding: 20px 0 0; display: flex; align-items: flex-end}
+#faqs p{text-align: justify; border: medium solid #C66D48; font-size: 16px; line-height: 25px; margin: 0; padding: 30px 30px;
+}
+/*recipes*/
+#recipes{padding: 20px 0 70px; color: black; text-align: justify}
+#recipes img{transition: all 0.5s}
+#recipes .col-4:hover> img{transform: scale(1.1)}
+#recipes h2{font-size: 38px; color: #C66D48}
+#recipes p{font-size: 12px}
+#recipes h3{display: flex; justify-content: center}
+/*contact*/
+table{width: 100%;
+	border: thin solid #C66D48; 
+	border-collapse: collapse;
+	color: #C66D48;
+	}
+th {
+  height: 340px;
+}
+td{
+	height: 70px; padding: 0 20px
+}
+#contact h1{font-size: 65px}
+/*drinks*/
+#products a{
+	font-family: 'Be Vietnam Pro', sans-serif; border: medium solid #C66D48; padding: 10px 37px; display: flex; justify-content: center; text-decoration: none; color: #C66D48
+}
+.choice ul{
+	display: flex;
+	list-style: none; justify-content: space-between;
+	padding: 20px
+}
+.choice ul li{position: relative; justify-content: space-around}
+.choice ul li a
+{
+	text-decoration: none;
+	color: #C66D48; 
+	text-transform: uppercase;
+	display: block; 
+	transition: all 0.3s}
+#products .choice a:hover {color: white; background-color: #C66D48}
+.milk {padding: 50px 30px}
+.milk h3{
+	color: black; font-family: 'Be Vietnam Pro', sans-serif; font-size: 23px; padding-left:  10px
+}
+.milk p{
+	color: gray; font-family: 'Inter', sans-serif; font-size: 12px; padding-left: 10px
+}
